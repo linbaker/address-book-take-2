@@ -1,3 +1,4 @@
+<!-- This section sets up our html code, links to stylesheets and scripts. Editing this section is generally not recommended. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,14 +10,13 @@
     <title>Track Suggester</title>
   </head>
   <body>
+<!-- This section is the header of the site. -->
     <div class="container">
       <div class="jumbotron">
         <h1>Track Suggestor</h1>
         <p>Take the quick survey below to learn which programming languages you may enjoy learning first</p>
       </div>
-
-<!--This next section will present users with a survey consisiting of 5 questions and 3 possible answers for each question-->
-
+<!-- This section is the form with radio buttons. -->
       <form id="survey">
        <div class="radio">
          <h5>Q1: What city would you most like to live in?</h5>
@@ -93,8 +93,10 @@
          </label>
        </div>
        <br>
+<!-- This section adds the submit button at the end of the form. -->
        <button type="submit" id ="send" class="btn btn-dark">Submit</button>
        <p class="disclaimer">Questions and suggested answers sourced from <a href="https://woz-u.com/quiz-whats-the-best-programming-language-to-learn/">woz-u.com.</a></p>
+<!-- This sections displays the result of a function performed on the user answers by a script. It is intially hidden. -->
        <div class="suggestion">
         <h5>
           <div id="titleoutput">
@@ -105,7 +107,9 @@
           </div>
         </em>
       </div>
+<!-- This section ends the form. -->
       </form>
     </div>
+<!-- As with the very first section, this section should generally not be edited. -->
   </body>
 </html>
