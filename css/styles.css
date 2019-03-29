@@ -10,3 +10,11 @@ h5 {
 button {
   margin-bottom:10px;
 }
+
+#result1, #result2, #result3 {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
