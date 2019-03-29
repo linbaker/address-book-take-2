@@ -19,5 +19,7 @@ $(function() {
             $("#result3").toggle();
       };
       event.preventDefault();
+      var username= $("input#name").val();
+      $(".username").text(username);
     });
 });
