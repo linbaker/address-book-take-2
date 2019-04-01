@@ -1,132 +1,24 @@
 <!-- This section sets up our html code, links to stylesheets and scripts. Editing this section is generally not recommended. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Track Suggester</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Site Title</title>
+</head>
+<body>
 <!-- This section is the header of the site. -->
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Track Suggestor</h1>
-        <p>Take the quick survey below to learn which programming languages you may enjoy learning first</p>
-      </div>
-<!-- This section is the form with radio buttons. -->
-      <form id="survey">
-        <div class="form-group">
-          <label for="name">Before we start? What's your name?</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-        <br>
-       <div class="radio">
-         <h5>Q1: What city would you most like to live in?</h5>
-         <label>
-           <input type="radio" name="city" value="1">San Francisco
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="city" value="2">New York
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="city" value="3">I want to work remotely
-         </label>
-       </div>
-       <br>
-       <div class="radio">
-         <h5>Q2: What size company would be ideal for you?</h5>
-         <label>
-           <input type="radio" name="companysize" value="1">Small or early stage startup
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="companysize" value="2">Medium or mid-to-late stage startup
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="companysize" value="3">Large, established company
-         </label>
-       </div>
-       <br>
-       <div class="radio">
-         <h5>Q3: Which of the following technical teams would you most like to work on?</h5>
-         <label>
-           <input type="radio" name="team" value="1">Hulu
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="team" value="2">Gmail
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="team" value="3">Spotify
-         </label>
-       </div>
-       <br>
-       <div class="radio">
-         <h5>Q4: What kind of projects would you be most excited to build?</h5>
-         <label>
-           <input type="radio" name="project" value="1">Apps, apps and more apps
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="project" value="2">Software
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="project" value="3">Beautiful, functional websites
-         </label>
-       </div>
-       <br>
-       <div class="radio">
-         <h5>Q5: In one word, what is the top reason you want to learn to code?</h5>
-         <label>
-           <input type="radio" name="topreason" value="1">Growth
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="topreason" value="2">Opportunity
-         </label>
-         <br>
-         <label>
-           <input type="radio" name="topreason" value="3">Money
-         </label>
-       </div>
-       <br>
-<!-- This section adds the submit and clear button at the end of the form. -->
-       <button type="submit" class="btn btn-dark">Send</button>
-       <button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">Clear</button>
-       <p class="disclaimer">Questions and suggested answers sourced from <a href="https://woz-u.com/quiz-whats-the-best-programming-language-to-learn/">woz-u.com.</a></p>
-<!-- This section ends the form. -->
-      </form>
-<!-- This sections displays 3 columns which are initially hidden but a function will return one once user completes form. -->
-      <br>
-      <div class="row">
-        <div class="col-md-4">
-          <div id="result1">
-            <h5>C#</h5>
-            <em>Good choice <strong><span class ="username"></span></strong>! "C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</em>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div id="result2">
-            <h5>Java</h5>
-            <em>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications <strong><span class ="username"></span></strong> Java could be a good language to learn.</em>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div id="result3">
-            <h5>PHP</h5>
-            <em>PHP is by far the most popular backend language today <strong><span class ="username"></span></strong>, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. A great way to go if you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of websites, or if you like the idea of building out small sites for brands, businesses, and organizations.</em>
-          </div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Site Heading</h1>
+      <p>Site Intro</p>
     </div>
+<!-- This section is... -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <!-- As with the very first section, this section should generally not be edited. -->
-  </body>
+  </div>
+</body>
 </html>
