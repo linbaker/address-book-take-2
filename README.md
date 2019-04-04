@@ -14,6 +14,16 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _Open index.html_
 * _Alternatively, launch marclignarius.github.io/projectname_
 
+##Specs
+
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| Lorem | x | true/false |
+| Lorem | x | true/false |
+| Lorem | x | true/false |
+| Lorem | x | true/false |
+| Lorem | x | true/false |
+
 ## Known Bugs
 
 _None as of last update_
