@@ -14,7 +14,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _Open index.html_
 * _Alternatively, launch marclignarius.github.io/projectname_
 
-##Specs
+## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
