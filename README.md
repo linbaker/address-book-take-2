@@ -1,28 +1,25 @@
-# _{Application Name}_
+# _Address Book_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Epidocus Intro to Programming Week 4, 04/08/2019_
 
 #### By _**Marc Davies**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Use of Javascript objects and event delegation to build an Address Book_
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
 * _Open index.html_
-* _Alternatively, launch marclignarius.github.io/projectname_
 
 ## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
+| Program tracks a user's first name, last name and phone number | John Doe 123-456-7890 | John Doe |
+| Program displays contact information upon click | John Doe (click) | First Name: John, Last Name: Doe, Phone Number: 123-456-7890 |
+| Program deletes a contact upon click | John Doe / Delete | true |
 
 ## Known Bugs
 
