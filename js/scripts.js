@@ -40,11 +40,15 @@ AddressBook.prototype.deleteContact = function(id) {
 
 // Business Logic for Contacts -------------------------------------------------
 
-function Contact(firstName, lastName, phoneNumber) {
+function Contact(firstName, lastName, phoneNumber, emailPersonalAddress, emailWorkAddress, physicalHomeAddress, physicalWorkAddress) {
   this.firstName = firstName,
   this.lastName = lastName,
-  this.phoneNumber = phoneNumber
-}
+  this.phoneNumber = phoneNumber,
+  this.emailPersonalAddress = emailPersonalAddress,
+  this.emailWorkAddress = emailWorkAddress,
+  this.physicalHomeAddress = physicalHomeAddress,
+  this.physicalWorkAddress = physicalWorkAddress
+  }
 
 Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
@@ -69,6 +73,10 @@ function showContact(contactId) {
   $(".first-name").html(contact.firstName);
   $(".last-name").html(contact.lastName);
   $(".phone-number").html(contact.phoneNumber);
+  $(".email-personal-address").html(contact.emailPersonalAddress);
+  $(".email-work-address").html(contact.emailWorkAddress);
+  $(".physical-home-address").html(contact.physicalHomeAddress);
+  $(".physical-work-address").html(contact.physicalWorkAddress);
   var buttons = $("#buttons");
   buttons.empty();
   buttons.append("<button class='deleteButton' id=" +  + contact.id + ">Delete</button>");
@@ -92,10 +100,18 @@ $(document).ready(function() {
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
     var inputtedPhoneNumber = $("input#new-phone-number").val();
+    var inputtedEmailPersonalAddress = $("input#new-email-personal-address").val();
+    var inputtedEmailWorkAddress = $("input#new-email-work-address").val();
+    var inputtedPhysicalHomeAddress = $("input#new-physical-home-address").val();
+    var inputtedPhysicalWorkAddress = $("input#new-physical-work-address").val();
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
     $("input#new-phone-number").val("");
-    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
+    $("input#new-email-personal-address").val("");
+    $("input#new-email-work-address").val("");
+    $("input#new-physical-home-address").val("");
+    $("input#new-physical-work-address").val("");
+    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmailPersonalAddress, inputtedEmailWorkAddress, inputtedPhysicalHomeAddress, inputtedPhysicalWorkAddress );
     addressBook.addContact(newContact);
     displayContactDetails(addressBook);
   })
